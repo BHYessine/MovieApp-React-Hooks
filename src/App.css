@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;    
+}
+.App{
+    background-image: url("https://observer.com/wp-content/uploads/sites/2/2021/05/summer-movies-2021-new-e1620919489437.jpg?quality=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.inputSearch{
+    background-color: coral;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    height: 50px;
+    column-gap: 20px;
+    font-size: 18px;
+    border-bottom: 3px solid rgb(11, 11, 114);
+}
+.inputSearch input{
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+.titleSearch, .rateSearch{
+    display: none;
+}
+#titleCheck:checked~ .titleSearch{
+    display: initial;
+}
+#rateCheck:checked~ .rateSearch{
+    display: initial;
+}
+.searchList{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 50px;
+    row-gap: 20px;
+    padding: 30px 10%;
+    min-height: 700px;
+}
+.cardMovie{
+    background-color: rgb(19, 75, 19);
+    padding: 10px; 
+    border-radius: 10px;
+    height: 300px; 
+    display: flex;  
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid rgb(19, 75, 19);    
+    box-shadow: 8px 10px rgb(11, 11, 114);
+    color: white;
+}
+.cardMovie img{
+    border-radius: 10px;
+}
+.newCard{
+    background-color: gainsboro;
+    height: 300px; width:300px;
+    padding: 10px; 
+    border-radius: 10px;
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    border: 1px solid gainsboro;    
+    box-shadow: 8px 10px rgb(11, 11, 114);
+}
+.newCard button{
+    width: 100px; height: 100px;
+    border-radius: 50%;
+    border: 1px solid white;
+    font-size: 50px;
+    cursor: pointer;
+}
